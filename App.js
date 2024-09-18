@@ -16,10 +16,10 @@ app.use("/api", router);
 // Serve static files from the uploads directory
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-app.get("/", (req, res) => {
-  app.use(express.static(path.resolve(__dirname, "my-admin", "build")));
-  res.sendFile(path.resolve(__dirname, "my-admin", "build", "index.html"));
-});
+// app.get("/", (req, res) => {
+//   app.use(express.static(path.resolve(__dirname, "my-admin", "build")));
+//   res.sendFile(path.resolve(__dirname, "my-admin", "build", "index.html"));
+// });
 
 // Start server
 const startServer = async () => {
