@@ -26,7 +26,7 @@ const startServer = async () => {
   try {
     await connectDB(); // Connect to MongoDB
     app.listen(PORT, () => {
-      console.log(`Server is running at http://localhost:${PORT}`);
+      console.log(`Server is running at https://backend-sandy-three-84.vercel.app:${PORT}`);
     });
   } catch (err) {
     console.error("Failed to start server:", err);
